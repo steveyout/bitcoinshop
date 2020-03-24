@@ -1989,7 +1989,7 @@ withdrawscene.enter((ctx) => {
             ctx.scene.leave()
         } else {
             var points=results[0].payoutpoints
-            var btc =points
+            var btc =points/1000000
             var btcAmount, currency, rates;
 
             rates = require('bitcoin-exchange-rates');
@@ -1998,9 +1998,9 @@ withdrawscene.enter((ctx) => {
 
             currency = 'USD';
             rates.fromBTC(btcAmount, currency, function (err, rate) {
-                ctx.replyWithHTML('<b>🏵Withdraw funds</b>\n\nyour withdraw wallet: <b>' + results[0].withdrawadd + '</b>\n\nThe withdrawal of funds is made from the balance designated for payments at the rate of 0.001 BCH = 1,000 💰\n<b>Your balance ' + results[0].payout + '💰</b>\n\nTo convert your balance in order to receive payments to the BTC, you also need points ⚡️same as your withdraw balance.eg:to withdraw 1000💰 you need to have 1000 ⚡️\n\nYour point balance allows you to withdraw as follows:\n <b>' +results[0].payoutpoints+' ⚡️=' +btcAmount+' BTC</b> <i>( $'+ rate+' )</i>\n<a href="https://t.me/bitcoinshopnews/5">How to earn points</a> ')
+                ctx.replyWithHTML('<b>🏵Withdraw funds</b>\n\nyour withdraw wallet: <b>' + results[0].withdrawadd + '</b>\n\nThe withdrawal of funds is made from the balance designated for payments at the rate of 0.001 BTC = 1,000 💰\n<b>Your balance ' + results[0].payout + '💰</b>\n\nTo convert your balance in order to receive payments to the BTC, you also need points ⚡️same as your withdraw balance.eg:to withdraw 1000💰 you need to have 1000 ⚡️\n\nYour point balance allows you to withdraw as follows:\n <b>' +results[0].payoutpoints+' ⚡️=' +btcAmount+' BTC</b> <i>( $'+ rate+' )</i>\n<a href="https://t.me/bitcoinshopnews/5">How to earn points</a> ')
                     .then(() => {
-                        ctx.replyWithHTML('<i>Enter the number of 💰 you would like to withdraw to your BCH Wallet (a minimum of 2000)</i>', Markup
+                        ctx.replyWithHTML('<i>Enter the number of 💰 you would like to withdraw to your BTC Wallet (a minimum of 2000)</i>', Markup
                             .keyboard([
                                 ['🛑cancel'], // Row1 with 2 buttons
                             ])
@@ -2083,7 +2083,7 @@ withdrawscene.on('message',ctx => {
 })
 //withdrawaddress
 const greeterScene = new Scene('greeter')
-greeterScene.enter((ctx) => ctx.reply('send your BCH wallet address to be used for withdrawals below to update it',Markup
+greeterScene.enter((ctx) => ctx.reply('send your BTC wallet address to be used for withdrawals below to update it',Markup
     .keyboard([
         ['🛑cancel'] // Row1 with 2 buttons
     ])
