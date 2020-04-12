@@ -20,8 +20,8 @@
       <file leaf-file-name="farmbitcoin.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/farmbitcoin.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="106">
-              <caret line="2000" column="221" selection-start-line="2000" selection-start-column="221" selection-end-line="2000" selection-end-column="221" />
+            <state relative-caret-position="184">
+              <caret line="26" column="82" lean-forward="true" selection-start-line="26" selection-end-line="26" selection-end-column="82" />
             </state>
           </provider>
         </entry>
@@ -238,11 +238,17 @@
       <workItem from="1584694694046" duration="26000" />
       <workItem from="1584992297556" duration="1194000" />
       <workItem from="1585034483934" duration="245000" />
+      <workItem from="1585035192287" duration="694000" />
+      <workItem from="1585036578393" duration="13000" />
+      <workItem from="1585305015325" duration="70000" />
+      <workItem from="1585305773114" duration="82000" />
+      <workItem from="1586720338920" duration="117000" />
+      <workItem from="1586721091041" duration="118000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="41865000" />
+    <option name="totallyTimeSpent" value="42959000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1376" height="744" extended-state="6" />
@@ -470,8 +476,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/farmbitcoin.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="106">
-          <caret line="2000" column="221" selection-start-line="2000" selection-start-column="221" selection-end-line="2000" selection-end-column="221" />
+        <state relative-caret-position="184">
+          <caret line="26" column="82" lean-forward="true" selection-start-line="26" selection-end-line="26" selection-end-column="82" />
         </state>
       </provider>
     </entry>

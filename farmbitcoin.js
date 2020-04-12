@@ -24,7 +24,7 @@ var Client = require('coinbase').Client;
 var mysecret = 'YmPmAsNeuwvEiufNue4erKBktoCaShhF'
 var mykey = 'jawBVbmyN9GPhQvs'
 var sb = require('satoshi-bitcoin');
-var client = new Client({'apiKey': mykey, 'apiSecret': mysecret});
+var client = new Client({'apiKey': mykey, 'apiSecret': mysecret,strictSSL:false});
 var paypal = require('paypal-rest-sdk');
 paypal.configure({
     'mode': 'live', //sandbox or live
